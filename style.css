@@ -1,0 +1,102 @@
+@import url('reset.css');
+
+
+
+.title{
+	height:50px;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	padding-top:10px;
+	font-size:2em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	background-color:#000000;
+	color:#FFFFFF;
+}
+
+
+.wrapper{
+	width:800px;
+	height:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:6px;
+}
+
+.explainWrapper{
+	width:800px;
+	height:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:6px;
+}
+
+.millions{
+	width:387px;
+	height:390px;
+	background-color:#f9f9f9;
+	margin-right:6px;
+	float:left;
+	border:5px solid #000000;
+	border-right:5px solid #888888;
+}
+
+.minnow{
+	width:387px;
+	height:390px;
+	background-color:#f9f9f9;
+	float:left;
+	border:5px solid #000000;
+	border-left:5px solid #888888;
+}
+
+.show{
+	display:block;
+}
+
+.hide{
+	display:none;
+}
+
+
+.button{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-size:1em;
+	font-weight:600;
+	height: 25px;
+	padding-top:8px;
+	cursor:pointer;
+	width: 150px;
+	background-color:#eeeeee;
+	border-left:3px solid #cccccc;
+	border-top:3px solid #cccccc;
+	border-right:3px solid #999999;
+	border-bottom:3px solid #999999;
+	margin-top:20px;
+	margin-left:115px;
+}
+
+.button.f3{
+	height:41px;
+}
+
+.question{
+	width:347px;
+	height:50px;
+	padding:20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.7em;
+	text-align:center;
+	font-weight:100;
+	
+}
+
+.milExplain .explain{
+	width:367px;
+	border:5px solid #000000;
+	border-right:5px solid #888888;
+	padding:10px;
+}
