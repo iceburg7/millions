@@ -14,6 +14,10 @@ $(document).ready(function(){
 	var friend = "0";
 	var gender = "0";
 	var attraction = "0";
+	var strength = "0";
+	var weakness = "0";
+	var love = "0";
+	var downfall = "0";
 	
 	
 	
@@ -73,7 +77,9 @@ $(document).ready(function(){
 	}
 	
 	
-	
+	//--------------------------------------------------------------
+	//--------------------------------------------------------------
+	//--------------------------------------------------------------
 	
 	
 	
@@ -576,6 +582,307 @@ $(document).ready(function(){
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	$(".j1").hover(function(){
+		$(".j1x").css("display","block");
+		},function(){
+		$(".j1x").css("display","none");
+	});
+	
+	$(".j1").click(function(){
+		attraction = "same";
+		milHide();
+		show(".k");
+	});
+	
+	$(".j2").hover(function(){
+		$(".j2x").css("display","block");
+		},function(){
+		$(".j2x").css("display","none");
+	});
+	
+	$(".j2").click(function(){
+		attraction = "opposite";
+		milHide();
+		show(".k");
+	});
+	
+	$(".j3").hover(function(){
+		$(".j3x").css("display","block");
+		},function(){
+		$(".j3x").css("display","none");
+	});
+	
+	$(".j3").click(function(){
+		attraction = "counter";
+		milHide();
+		show(".k");
+	});
+	
+	$(".j4").hover(function(){
+		$(".j4x").css("display","block");
+		},function(){
+		$(".j4x").css("display","none");
+	});
+	
+	$(".j4").click(function(){
+		attraction = "all";
+		milHide();
+		show(".k");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(".k1").hover(function(){
+		$(".k1x").css("display","block");
+		},function(){
+		$(".k1x").css("display","none");
+	});
+	
+	$(".k1").click(function(){
+		strength = "empathy";
+		milHide();
+		show(".l");
+	});
+	
+	$(".k2").hover(function(){
+		$(".k2x").css("display","block");
+		},function(){
+		$(".k2x").css("display","none");
+	});
+	
+	$(".k2").click(function(){
+		strength = "judgement";
+		milHide();
+		show(".l");
+	});
+	
+	$(".k3").hover(function(){
+		$(".k3x").css("display","block");
+		},function(){
+		$(".k3x").css("display","none");
+	});
+	
+	$(".k3").click(function(){
+		strength = "smell";
+		milHide();
+		show(".l");
+	});
+	
+	$(".k4").hover(function(){
+		$(".k4x").css("display","block");
+		},function(){
+		$(".k4x").css("display","none");
+	});
+	
+	$(".k4").click(function(){
+		strength = "poetry";
+		milHide();
+		show(".l");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(".l1").hover(function(){
+		$(".l1x").css("display","block");
+		},function(){
+		$(".l1x").css("display","none");
+	});
+	
+	$(".l1").click(function(){
+		weakness = "hubris";
+		milHide();
+		show(".m");
+	});
+	
+	$(".l2").hover(function(){
+		$(".l2x").css("display","block");
+		},function(){
+		$(".l2x").css("display","none");
+	});
+	
+	$(".l2").click(function(){
+		weakness = "scale";
+		milHide();
+		show(".m");
+	});
+	
+	$(".l3").hover(function(){
+		$(".l3x").css("display","block");
+		},function(){
+		$(".l3x").css("display","none");
+	});
+	
+	$(".l3").click(function(){
+		weakness = "miscalculation";
+		milHide();
+		show(".m");
+	});
+	
+	$(".l4").hover(function(){
+		$(".l4x").css("display","block");
+		},function(){
+		$(".l4x").css("display","none");
+	});
+	
+	$(".l4").click(function(){
+		weakness = "trust";
+		milHide();
+		show(".m");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(".m1").hover(function(){
+		$(".m1x").css("display","block");
+		},function(){
+		$(".m1x").css("display","none");
+	});
+	
+	$(".m1").click(function(){
+		love = "level3";
+		milHide();
+		show(".n");
+	});
+	
+	$(".m2").hover(function(){
+		$(".m2x").css("display","block");
+		},function(){
+		$(".m2x").css("display","none");
+	});
+	
+	$(".m2").click(function(){
+		love = "level2";
+		milHide();
+		show(".n");
+	});
+	
+	$(".m3").hover(function(){
+		$(".m3x").css("display","block");
+		},function(){
+		$(".m3x").css("display","none");
+	});
+	
+	$(".m3").click(function(){
+		love = "level1";
+		milHide();
+		show(".n");
+	});
+	
+	$(".m4").hover(function(){
+		$(".m4x").css("display","block");
+		},function(){
+		$(".m4x").css("display","none");
+	});
+	
+	$(".m4").click(function(){
+		love = "no";
+		milHide();
+		show(".n");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(".n1").hover(function(){
+		$(".n1x").css("display","block");
+		},function(){
+		$(".n1x").css("display","none");
+	});
+	
+	$(".n1").click(function(){
+		downfall = "hesitation";
+		milHide();
+		show(".o");
+	});
+	
+	$(".n2").hover(function(){
+		$(".n2x").css("display","block");
+		},function(){
+		$(".n2x").css("display","none");
+	});
+	
+	$(".n2").click(function(){
+		downfall = "miss";
+		milHide();
+		show(".o");
+	});
+	
+	$(".n3").hover(function(){
+		$(".n3x").css("display","block");
+		},function(){
+		$(".n3x").css("display","none");
+	});
+	
+	$(".n3").click(function(){
+		downfall = "cowardice";
+		milHide();
+		show(".o");
+	});
+	
+	$(".n4").hover(function(){
+		$(".n4x").css("display","block");
+		},function(){
+		$(".n4x").css("display","none");
+	});
+	
+	$(".n4").click(function(){
+		downfall = "ideal";
+		milHide();
+		show(".o");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//--------------------------------------------------------------
+	//--------------------------------------------------------------
+	//--------------------------------------------------------------
 	
 	
 	

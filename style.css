@@ -79,7 +79,7 @@
 	margin-left:115px;
 }
 
-.button.f3{
+.button.f3, .button.l3{
 	height:41px;
 }
 
@@ -96,6 +96,10 @@
 .button.h1, .button.j3{
 	width:300px;
 	margin-left:40px;
+}
+
+.button.m1{
+	margin-top:45px;
 }
 
 .question{
