@@ -83,6 +83,21 @@
 	height:41px;
 }
 
+.button.g2, .button.g3, .button.h2{
+	width:250px;
+	margin-left:65px;
+}
+
+.button.h3{
+	width:200px;
+	margin-left:90px;
+}
+
+.button.h1, .button.j3{
+	width:300px;
+	margin-left:40px;
+}
+
 .question{
 	width:347px;
 	height:50px;

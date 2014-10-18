@@ -9,6 +9,11 @@ $(document).ready(function(){
 	
 	var charClass = "0";
 	var subClass = "0";
+	var origin = "0";
+	var star = "0";
+	var friend = "0";
+	var gender = "0";
+	var attraction = "0";
 	
 	
 	
@@ -353,7 +358,7 @@ $(document).ready(function(){
 	});
 	
 	$(".f1").click(function(){
-		subClass = "depths";
+		origin = "depths";
 		milHide();
 		show(".g");
 	});
@@ -365,7 +370,7 @@ $(document).ready(function(){
 	});
 	
 	$(".f2").click(function(){
-		subClass = "shallows";
+		origin = "shallows";
 		milHide();
 		show(".g");
 	});
@@ -377,7 +382,7 @@ $(document).ready(function(){
 	});
 	
 	$(".f3").click(function(){
-		subClass = "cave";
+		origin = "cave";
 		milHide();
 		show(".g");
 	});
@@ -389,10 +394,190 @@ $(document).ready(function(){
 	});
 	
 	$(".f4").click(function(){
-		subClass = "grotto";
+		origin = "grotto";
 		milHide();
 		show(".g");
 	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(".g1").hover(function(){
+		$(".g1x").css("display","block");
+		},function(){
+		$(".g1x").css("display","none");
+	});
+	
+	$(".g1").click(function(){
+		star = "red";
+		milHide();
+		show(".h");
+	});
+	
+	$(".g2").hover(function(){
+		$(".g2x").css("display","block");
+		},function(){
+		$(".g2x").css("display","none");
+	});
+	
+	$(".g2").click(function(){
+		star = "white";
+		milHide();
+		show(".h");
+	});
+	
+	$(".g3").hover(function(){
+		$(".g3x").css("display","block");
+		},function(){
+		$(".g3x").css("display","none");
+	});
+	
+	$(".g3").click(function(){
+		star = "neutron";
+		milHide();
+		show(".h");
+	});
+	
+	$(".g4").hover(function(){
+		$(".g4x").css("display","block");
+		},function(){
+		$(".g4x").css("display","none");
+	});
+	
+	$(".g4").click(function(){
+		star = "new";
+		milHide();
+		show(".h");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(".h1").hover(function(){
+		$(".h1x").css("display","block");
+		},function(){
+		$(".h1x").css("display","none");
+	});
+	
+	$(".h1").click(function(){
+		friend = "queen";
+		milHide();
+		show(".i");
+	});
+	
+	$(".h2").hover(function(){
+		$(".h2x").css("display","block");
+		},function(){
+		$(".h2x").css("display","none");
+	});
+	
+	$(".h2").click(function(){
+		friend = "whisperer";
+		milHide();
+		show(".i");
+	});
+	
+	$(".h3").hover(function(){
+		$(".h3x").css("display","block");
+		},function(){
+		$(".h3x").css("display","none");
+	});
+	
+	$(".h3").click(function(){
+		friend = "miner";
+		milHide();
+		show(".i");
+	});
+	
+	$(".h4").hover(function(){
+		$(".h4x").css("display","block");
+		},function(){
+		$(".h4x").css("display","none");
+	});
+	
+	$(".h4").click(function(){
+		friend = "no";
+		milHide();
+		show(".i");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(".i1").hover(function(){
+		$(".i1x").css("display","block");
+		},function(){
+		$(".i1x").css("display","none");
+	});
+	
+	$(".i1").click(function(){
+		gender = "dominant";
+		milHide();
+		show(".j");
+	});
+	
+	$(".i2").hover(function(){
+		$(".i2x").css("display","block");
+		},function(){
+		$(".i2x").css("display","none");
+	});
+	
+	$(".i2").click(function(){
+		gender = "leftward";
+		milHide();
+		show(".j");
+	});
+	
+	$(".i3").hover(function(){
+		$(".i3x").css("display","block");
+		},function(){
+		$(".i3x").css("display","none");
+	});
+	
+	$(".i3").click(function(){
+		gender = "insubordinate";
+		milHide();
+		show(".j");
+	});
+	
+	$(".i4").hover(function(){
+		$(".i4x").css("display","block");
+		},function(){
+		$(".i4x").css("display","none");
+	});
+	
+	$(".i4").click(function(){
+		gender = "looping";
+		milHide();
+		show(".j");
+	});
+	
+	
+	
+	
+	
+	
 	
 	
 	
