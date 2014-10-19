@@ -326,5 +326,66 @@
 	float:left;
 }
 
+.minepilogue{
+	width:200px;
+	height:20px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+	margin-top:65px;
+	text-align:center;
+}
+
+.ep1{
+	background-color:#f6987e;
+}
+
+.ep3{
+	width:300px;
+}
+
+.ep4{
+	background-color:#fffcaa;
+}
+
+.ep6{
+	background-color:#79c879;
+}
+
+.ep7{
+	background-color:black;
+	color:white;
+}
 
 
+
+.milepilogue{
+	width:250px;
+	height:20px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+	margin-top:65px;
+	text-align:center;
+}
+
+.epi2{
+	background-color:#92d280;
+}
+
+.epi4{
+	background-color:#fffcaa;
+}
+
+.epi5{
+	width:300px;
+}
+
+.epi6{
+	background-color:#a4b5f2;
+}
+
+.epi7{
+	background-color:black;
+	color:white;
+}

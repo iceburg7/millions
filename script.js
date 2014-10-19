@@ -70,7 +70,11 @@ $(document).ready(function(){
 //		minImg(min);
 	};
 	
-	
+	var hide = function(y){
+		console.log(y);
+		$(y).removeClass("show");
+		$(y).addClass("hide");
+	}
 	
 	var show = function(y){
 		console.log(y);
@@ -1258,6 +1262,45 @@ $(document).ready(function(){
 		$(".talk1k").removeClass("show");
 		$(".talk1k").addClass("hide");
 	});
+	
+	
+	
+	
+	
+	
+	
+	
+//--------------------------------------------------------------------
+//--------------------------------------------------------------------
+//--------------------------------------------------------------------
+
+
+
+	$(".milKill").click(function(){
+	
+		hide(".title");
+		hide(".wrapper");
+		hide(".explainWrapper");
+		$("body").css("backgroundColor","black");
+	
+		show(".milepilogue");
+	
+	});
+	
+	
+	
+	$(".minKill").click(function(){
+	
+		hide(".title");
+		hide(".wrapper");
+		hide(".explainWrapper");
+		$("body").css("backgroundColor","black");
+		
+		show(".minepilogue");
+	
+	
+	});
+
 	
 	
 	
