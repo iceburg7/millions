@@ -19,6 +19,10 @@ $(document).ready(function(){
 	var love = "0";
 	var downfall = "0";
 	
+	var talkM = 0;
+	var talkR = 0;
+	var talkF = 0;
+	
 	
 	
 	
@@ -980,15 +984,167 @@ $(document).ready(function(){
 	
 	
 	
+	$(".talk1a").click(function(){
+		$(".speech1").empty();
+		minImg("martin");
+		if(talkM === 0){
+			$(".speech1").append("There was really nothing that I could do... This planet was giving the strangest responses to the navigation software.");
+			talkM = 1;
+		}else if(talkM === 1){
+			$(".speech1").append("It was definitely an engine failure that brought the ship down.  I wonder whether it was just a coincidence, or if there is some sort of field around this planet that interfered with the engine.");
+			talkM = 2;
+		}else if(talkM === 2){
+			$(".speech1").append("We would need to step out of the ship to really inspect the engine, but I'm not sure that that would be possible with all of the aliens around.  I guess one of us will have to go out eventually.");
+			talkM = 3;
+		}else if(talkM === 3){
+			$(".speech1").append("I suppose we have enough pancake mix and faux bacon to keep ourselves alive in here for about a week before we would need to leave the planet.  But if we can't get out to inspect the engine soon, we'll have no idea how much time we need.");
+			talkM = 4;
+		}else if(talkM === 4){
+			$(".speech1").append("I tried sending a distress signal as soon as we went down, but I haven't heard anything back.  I'm worried that our signal is being jammed as well.");
+			talkM = 5;
+		}else if(talkM === 5){
+			$(".speech1").append("We're scheduled to arrive at the next research outpost in five days, so if we don't manage to get airborne, I suppose they would start looking for us eventually.");
+			talkM = 6;
+		}else if(talkM >= 6){
+			$(".speech1").append("I just can't think of any other way to get a signal out.");
+			talkM = 7;
+			if(talkR === 5 && talkF === 5){
+				$(".talk1a").removeClass("show");
+				$(".talk1b").removeClass("show");
+				$(".talk1c").removeClass("show");
+				$(".talk1d").removeClass("hide");
+				$(".talk1a").addClass("hide");
+				$(".talk1b").addClass("hide");
+				$(".talk1c").addClass("hide");
+				$(".talk1d").addClass("show");
+			}
+			
+		}
+	});
+	
+	
+	$(".talk1b").click(function(){
+		$(".speech1").empty();
+		minImg("richardson");
+		if(talkR === 0){
+			$(".speech1").append("I should have known that we should stay away from this area.  It's loosely charted territory.  We could have taken a much safer route.");
+			talkR = 1;
+		}else if(talkR === 1){
+			$(".speech1").append("In my experience, aliens of this family are not the type to remain docile.  They can be extremely dangerous if they perceive you as a threat.");
+			talkR = 2;
+		}else if(talkR === 2){
+			$(".speech1").append("To be honest, I'm not even sure that this ship will be able to keep the aliens out if they start tearing at the walls.  Our best bet is to try to fix the engine as quickly as possible.");
+			talkR = 3;
+		}else if(talkR === 3){
+			$(".speech1").append("I'm sure we'll get out of here.  Right?  We've been through worse.  Remember the time that we barely escaped the abandoned asteroid?  That has to have been worse than this.  Right?");
+			talkR = 4;
+		}else if(talkR >= 4){
+			$(".speech1").append("What would be the safest way to go outside?  Are the aliens watching us right now?");
+			talkR = 5;
+			if(talkM === 7 && talkF === 5){
+				$(".talk1a").removeClass("show");
+				$(".talk1b").removeClass("show");
+				$(".talk1c").removeClass("show");
+				$(".talk1d").removeClass("hide");
+				$(".talk1a").addClass("hide");
+				$(".talk1b").addClass("hide");
+				$(".talk1c").addClass("hide");
+				$(".talk1d").addClass("show");
+			}
+		}
+		
+	});
 	
 	
 	
+	$(".talk1c").click(function(){
+		$(".speech1").empty();
+		minImg("fitzgerald");
+		if(talkF === 0){
+			$(".speech1").append("These aliens are fascinating.  It's almost as though they are all exactly the same.  I wonder if there is any difference between them.");
+			talkF = 1;
+		}else if(talkF === 1){
+			$(".speech1").append("Based on the behavior that I've seen in simpler creatures, it looks like this could be a hive creature.  These aliens may be entirely incapable of independent thought.");
+			talkF = 2;
+		}else if(talkF === 2){
+			$(".speech1").append("Their shell looks difficult to puncture.  I'm not sure how you would defend yourself against these things.");
+			talkF = 3;
+		}else if(talkF === 3){
+			$(".speech1").append("Remember those crabs we saw back on the last moon?  They remind me a bit of these creatures, in the way they move.");
+			talkF = 4;
+		}else if(talkF >= 4){
+			$(".speech1").append("I wonder why they haven't approached the ship yet.  Are they waiting for us to make a move?");
+			talkF = 5;
+			if(talkR === 5 && talkM === 7){
+				$(".talk1a").removeClass("show");
+				$(".talk1b").removeClass("show");
+				$(".talk1c").removeClass("show");
+				$(".talk1d").removeClass("hide");
+				$(".talk1a").addClass("hide");
+				$(".talk1b").addClass("hide");
+				$(".talk1c").addClass("hide");
+				$(".talk1d").addClass("show");
+			}
+		}
+		
+	});
 	
 	
+	$(".talk1d").click(function(){
+		$(".speech1").empty();
+		minImg("minnow");
+		$(".speech1").append("Listen up everyone.  I know that our resources are limited and that the situation looks dire.  As your captain, it is my duty to propose a plan of action.");
+		$(".talk1d").removeClass("show");
+		$(".talk1d").addClass("hide");
+		$(".talk1e").removeClass("hide");
+		$(".talk1e").addClass("show");
+	});
 	
+	$(".talk1e").click(function(){
+		$(".speech1").empty();
+		minImg("minnow");
+		$(".speech1").append("I'm going to leave the ship and assess the situation.  I want the rest of you to stay in here until I return safely.  I'll bring along the machete in case I need to defend myself.");
+		$(".talk1e").removeClass("show");
+		$(".talk1e").addClass("hide");
+		$(".talk1f").removeClass("hide");
+		$(".talk1f").addClass("show");
+	});
 	
+	$(".talk1f").click(function(){
+		$(".speech1").empty();
+		minImg("richardson");
+		$(".speech1").append("Wait wait wait, hold on, you can't just-");
+		$(".talk1f").removeClass("show");
+		$(".talk1f").addClass("hide");
+		$(".talk1g").removeClass("hide");
+		$(".talk1g").addClass("show");
+		$(".talk1h").removeClass("hide");
+		$(".talk1h").addClass("show");
+	});
 	
+	$(".talk1g").click(function(){
+		$(".speech1").empty();
+		minImg("minnow");
+		$(".speech1").append("Are you volunteering to go on this walk yourself, Richardson?  Like you just said, these aliens would be capable of tearing our ship apart if they wanted to.  We need to get out of here as soon as possible.");
+		$(".talk1g").removeClass("show");
+		$(".talk1g").addClass("hide");
+		$(".talk1h").removeClass("show");
+		$(".talk1h").addClass("hide");
+		$(".talk1i").removeClass("hide");
+		$(".talk1i").addClass("show");
+	});
 	
+	$(".talk1h").click(function(){
+		$(".speech1").empty();
+		minImg("minnow");
+		$(".speech1").append("Richardson, you said yourself that these aliens would be capable of tearing this ship apart if they wanted to.  We aren't safe here, and we need to get back up into orbit as soon as possible.");
+		$(".talk1g").removeClass("show");
+		$(".talk1g").addClass("hide");
+		$(".talk1h").removeClass("show");
+		$(".talk1h").addClass("hide");
+		$(".talk1i").removeClass("hide");
+		$(".talk1i").addClass("show");
+	});
 	
 	
 	

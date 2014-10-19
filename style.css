@@ -215,3 +215,83 @@
 }
 
 
+
+.speech{
+	width:367px;
+	height:80px;
+	padding:10px;
+	padding-top:30px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size:1em;
+	text-align:center;
+	font-weight:100;
+}
+
+.talk{
+	font-family: Georgia, "Times New Roman", serif;
+	text-align:center;
+	font-size:1em;
+	height: 40px;
+	padding-top:4px;
+	cursor:pointer;
+	width: 90px;
+	background-color:#eeeeee;
+	border-left:3px solid #cccccc;
+	border-top:3px solid #cccccc;
+	border-right:3px solid #999999;
+	border-bottom:3px solid #999999;
+}
+
+.talk.talk1a{
+	position:absolute;
+	left:10px;
+	bottom:5px;
+}
+
+.talk.talk1b{
+	position:absolute;
+	left:140px;
+	bottom:5px;
+}
+
+.talk.talk1c{
+	position:absolute;
+	left:270px;
+	bottom:5px;
+}
+
+.talk.talk1d, .talk.talk1e, .talk.talk1f, .talk.talk1g, .talk.talk1h{
+	height:25px;
+	margin-top:5px;
+	width: 140px;
+	position:absolute;
+	left:125px;
+	bottom:20px;
+}
+
+.talk.talk1e, .talk.talk1f, .talk.talk1g, .talk.talk1h{
+	width:170px;
+	left:110px;
+}
+
+.talk.talk1h{
+	bottom:10px;
+}
+
+.talk.talk1g{
+	bottom:50px;
+}
+
+.talk.talk1i, .talk.talk1j, .talk.talk1k{
+	height:25px;
+	margin-top:5px;
+	width: 170px;
+	position:absolute;
+	left:110px;
+	bottom:20px;
+}
+
+
+
+
+
