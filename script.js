@@ -874,6 +874,61 @@ $(document).ready(function(){
 	
 	
 	
+	$(".o1").hover(function(){
+		$(".o1x").css("display","block");
+		},function(){
+		$(".o1x").css("display","none");
+	});
+	
+	$(".o1").click(function(){
+//		downfall = "hesitation";
+		milHide();
+		show(".p");
+	});
+	
+	
+	
+	
+	
+	
+	
+	$(".p1").hover(function(){
+		$(".p1x").css("display","block");
+		},function(){
+		$(".p1x").css("display","none");
+	});
+	
+	$(".p1").click(function(){
+//		downfall = "hesitation";
+		milHide();
+		show(".q");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(".q1").hover(function(){
+		$(".q1x").css("display","block");
+		},function(){
+		$(".q1x").css("display","none");
+	});
+	
+	$(".q1").click(function(){
+//		downfall = "hesitation";
+		milHide();
+		show(".r");
+	});
+	
+	
+	
+	
+	
 	
 	
 	
@@ -888,7 +943,7 @@ $(document).ready(function(){
 	
 	
 	
-	
+	minImg("richardson");
 	
 	
 	$(".minnow").click(function(){
@@ -897,6 +952,8 @@ $(document).ready(function(){
 
 	
 	});
+	
+	
 	
 	
 	
