@@ -23,6 +23,9 @@ $(document).ready(function(){
 	var talkR = 0;
 	var talkF = 0;
 	
+	var minLoc = 0;
+	var milLoc = 0;
+	
 	
 	
 	
@@ -935,6 +938,60 @@ $(document).ready(function(){
 	
 	
 	
+	$(".r1, .r2").click(function(){
+		milHide();
+		milLoc = 1;
+		
+		if(minLoc <= 1){
+			milImg("mil1");
+		}
+		if(minLoc === 2){
+			milImg("mil1min2");
+		}
+		if(minLoc === 3){
+			minImg("min3mil1");
+			milImg("mil1min3");
+		}
+		
+		show(".s")
+		
+	});
+	
+	
+	
+	
+	$(".s1").click(function(){
+		milHide();
+		milLoc = 2;
+		
+		if(minLoc <= 1){
+			milImg("mil2");
+		}
+		if(minLoc === 2){
+			milImg("mil2min2");
+		}
+		if(minLoc === 3){
+			minImg("min3mil2");
+			milImg("mil2min3");
+			$(".title").css("backgroundColor","#ff0000");
+			$(".milKill").removeClass("hide");
+			$(".milKill").addClass("show");
+			$(".minKill").removeClass("hide");
+			$(".minKill").addClass("show");
+		}
+	
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -1146,6 +1203,61 @@ $(document).ready(function(){
 		$(".talk1i").addClass("show");
 	});
 	
+	$(".talk1i").click(function(){
+		minLoc = 1;
+		minImg("min1");
+		
+		$(".face").addClass("hide");
+		$(".speech1").removeClass("show");
+		$(".speech1").addClass("hide");
+		$(".talk1i").removeClass("show");
+		$(".talk1i").addClass("hide");
+		$(".talk1j").removeClass("hide");
+		$(".talk1j").addClass("show");
+	});
+	
+	$(".talk1j").click(function(){
+		minLoc = 2;
+		minImg("min2");
+		
+		if(milLoc === 1){
+			milImg("mil1min2");
+		}
+		if(milLoc === 2){
+			milImg("mil2min2");
+		}
+		
+		$(".talk1j").removeClass("show");
+		$(".talk1j").addClass("hide");
+		$(".talk1k").removeClass("hide");
+		$(".talk1k").addClass("show");
+	});
+	
+	$(".talk1k").click(function(){
+		minLoc = 3;
+		
+		if(milLoc === 0){
+			minImg("min3");
+		}
+		if(milLoc === 1){
+			minImg("min3mil1");
+			milImg("mil1min3");
+		}
+		if(milLoc === 2){
+			minImg("min3mil2");
+			milImg("mil2min3");
+			$(".title").css("backgroundColor","#ff0000");
+			$(".milKill").removeClass("hide");
+			$(".milKill").addClass("show");
+			$(".minKill").removeClass("hide");
+			$(".minKill").addClass("show");
+			
+		}
+		
+		
+		$(".talk1k").removeClass("show");
+		$(".talk1k").addClass("hide");
+	});
 	
 	
 	

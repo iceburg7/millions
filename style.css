@@ -291,7 +291,40 @@
 	bottom:20px;
 }
 
+.minKill{
+	font-family: Georgia, "Times New Roman", serif;
+	text-align:center;
+	font-size:1em;
+	height: 30px;
+	padding-top:8px;
+	cursor:pointer;
+	width: 120px;
+	background-color:#eeeeee;
+	border-left:3px solid #ff0000;
+	border-top:3px solid #ff0000;
+	border-right:3px solid #b60303;
+	border-bottom:3px solid #b60303;
+	float:right;
+	margin-right:140px;
+}
 
+.milKill{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-size:1em;
+	font-weight:600;
+	height: 25px;
+	padding-top:8px;
+	cursor:pointer;
+	width: 150px;
+	background-color:#eeeeee;
+	border-left:3px solid #ff0000;
+	border-top:3px solid #ff0000;
+	border-right:3px solid #b60303;
+	border-bottom:3px solid #b60303;
+	margin-left:115px;
+	float:left;
+}
 
 
 
