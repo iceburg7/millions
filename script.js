@@ -957,6 +957,26 @@ $(document).ready(function(){
 	
 	
 	
+	$(".martinHover").hover(function(){
+		$(".martinBio").css("display","block");
+		},function(){
+		$(".martinBio").css("display","none");
+	});
+	
+	$(".richardsonHover").hover(function(){
+		$(".richardsonBio").css("display","block");
+		},function(){
+		$(".richardsonBio").css("display","none");
+	});
+	
+	$(".fitzgeraldHover").hover(function(){
+		$(".fitzgeraldBio").css("display","block");
+		},function(){
+		$(".fitzgeraldBio").css("display","none");
+	});
+	
+	
+	
 	
 	
 	

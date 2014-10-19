@@ -50,6 +50,7 @@
 	float:left;
 	border:5px solid #000000;
 	border-left:5px solid #888888;
+	position:relative;
 }
 
 .show{
@@ -127,3 +128,90 @@
 	border-right:5px solid #888888;
 	padding:10px;
 }
+
+.minExplain .explain{
+	width:367px;
+	border:5px solid #000000;
+	border-left:5px solid #888888;
+	padding:10px;
+	margin-left:403px;
+}
+
+
+
+.martinHover{
+	width:30px;
+	height:40px;
+	position:absolute;
+	left:45px;
+	top:215px;
+}
+
+.martinFace{
+	width:144px;
+	height:144px;
+	background-image:url("images/martin_close.jpg");
+	float:left;
+}
+
+.martinText{
+	width:200px;
+	margin-left:6px;
+	float:left;
+}
+
+.martinFix{
+	clear:both;
+}
+
+.richardsonHover{
+	width:30px;
+	height:40px;
+	position:absolute;
+	left:167px;
+	top:215px;
+}
+
+.richardsonFace{
+	width:144px;
+	height:144px;
+	background-image:url("images/richardson_close.jpg");
+	float:left;
+}
+
+.richardsonText{
+	width:200px;
+	margin-left:6px;
+	float:left;
+}
+
+.richardsonFix{
+	clear:both;
+}
+
+.fitzgeraldHover{
+	width:30px;
+	height:40px;
+	position:absolute;
+	left:280px;
+	top:245px;
+}
+
+.fitzgeraldFace{
+	width:144px;
+	height:144px;
+	background-image:url("images/fitzgerald_close.jpg");
+	float:left;
+}
+
+.fitzgeraldText{
+	width:200px;
+	margin-left:6px;
+	float:left;
+}
+
+.fitzgeraldFix{
+	clear:both;
+}
+
+
